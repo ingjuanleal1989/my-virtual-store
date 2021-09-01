@@ -1,9 +1,7 @@
-import './mainNavigation.css';
+import "./mainNavigation.css";
 
 const MainNavigation = () => {
-  return (
-    <div className="main-navigation-container"></div>
-  );
+  return <div className="main-navigation-container"></div>;
 };
 
 export default MainNavigation;

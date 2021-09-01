@@ -1,25 +1,29 @@
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect } from "react-router-dom";
 
-import Layout from './components/layout/Layout';
-import AllProducts from './pages/AllProducts';
-import NewProduct from './pages/NewProduct';
-import ProductDetail from './pages/ProductDetail';
+import Layout from "./components/layout/Layout";
+import AllProducts from "./pages/AllProducts";
+import NewProduct from "./pages/NewProduct";
+import NotFound from "./pages/NotFound";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
     <Layout>
       <Switch>
-        <Route path='/' exact>
-          <Redirect to='/products'/>
+        <Route path="/" exact>
+          <Redirect to="/products" />
         </Route>
-        <Route path='/products' exact>
+        <Route path="/products" exact>
           <AllProducts />
         </Route>
-        <Route path='/products/:productId'>
+        <Route path="/products/:productId">
           <ProductDetail />
         </Route>
-        <Route path='/new-product'>
+        <Route path="/new-product">
           <NewProduct />
+        </Route>
+        <Route path="*">
+          <NotFound />
         </Route>
       </Switch>
     </Layout>
