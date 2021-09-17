@@ -1,15 +1,15 @@
 import { useHistory } from "react-router-dom";
-import NewProductForm from "../components/products/NewProductForm";
+import InventoryItemDetails from "../components/inventory/InventoryItemDetails";
 
 const NewProduct = () => {
   const history = useHistory();
 
   const addProductHandler = (productData) => {
     console.log(productData);
-    history.push("/products");
+    history.push("/inventory");
   };
 
-  return <NewProductForm onAddProduct={addProductHandler} />;
+  return <InventoryItemDetails onAddProduct={addProductHandler} />;
 };
 
 export default NewProduct;

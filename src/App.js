@@ -1,26 +1,26 @@
 import { Route, Switch, Redirect } from "react-router-dom";
 
 import Layout from "./components/layout/Layout";
-import AllProducts from "./pages/AllProducts";
-import NewProduct from "./pages/NewProduct";
+import InventoryPage from "./pages/InventoryPage";
+import NewInventoryItem from "./pages/NewInventoryItem";
 import NotFound from "./pages/NotFound";
-import ProductDetail from "./pages/ProductDetail";
+import ReportersPage from "./pages/ReportersPage";
 
 function App() {
   return (
     <Layout>
       <Switch>
         <Route path="/" exact>
-          <Redirect to="/products" />
+          <Redirect to="/inventory" />
         </Route>
-        <Route path="/products" exact>
-          <AllProducts />
+        <Route path="/inventory" exact>
+          <InventoryPage />
         </Route>
-        <Route path="/products/:productId">
-          <ProductDetail />
+        <Route path="/reporters">
+          <ReportersPage />
         </Route>
-        <Route path="/new-product">
-          <NewProduct />
+        <Route path="/new-inventory-item">
+          <NewInventoryItem />
         </Route>
         <Route path="*">
           <NotFound />

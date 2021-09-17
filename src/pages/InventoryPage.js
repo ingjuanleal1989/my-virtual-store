@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-
-import ProductList from "../components/products/ProductList";
+import InventoryList from "../components/inventory/InventoryList";
+import InventoryPageHeader from "../components/inventory/InventoryPageHeader";
+import PageContainer from "../components/layout/PageContainer";
 
 const DUMMY_PRODUCTS = [
   {
@@ -27,15 +27,13 @@ const DUMMY_PRODUCTS = [
   },
 ];
 
-const AllProducts = () => {
+const InventoryPage = () => {
   return (
-    <div>
-      <Link className="btn floating-btn" to="/new-product">
-        Add Product
-      </Link>
-      <ProductList products={DUMMY_PRODUCTS} />
-    </div>
+    <PageContainer>
+      <InventoryPageHeader />
+      <InventoryList products={DUMMY_PRODUCTS} />
+    </PageContainer>
   );
 };
 
-export default AllProducts;
+export default InventoryPage;

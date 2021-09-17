@@ -1,0 +1,19 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  height: 4rem;
+}
+
+.title {
+  font-family: "TTInterfaces-Bold";
+  font-size: 2rem;
+}

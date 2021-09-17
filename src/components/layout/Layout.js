@@ -1,7 +1,7 @@
 import Sidebar from "./Sidebar";
 import MainNavigation from "./MainNavigation";
 
-import './layout.css';
+import "./layout.css";
 
 const Layout = (props) => {
   return (

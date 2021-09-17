@@ -1,11 +1,12 @@
-import { Fragment } from "react";
-import ProductItem from "./ProductItem";
+import InventoryItem from "./InventoryItem";
+import InventoryListHeader from "./InventoryListHeader";
 
-const ProductList = (props) => {
+const inventoryList = (props) => {
   return (
-    <Fragment>
+    <div>
+      <InventoryListHeader />
       {props.products.map((product) => (
-        <ProductItem
+        <InventoryItem
           key={product.id}
           id={product.id}
           name={product.name}
@@ -17,8 +18,8 @@ const ProductList = (props) => {
           profitability={product.profitability}
         />
       ))}
-    </Fragment>
+    </div>
   );
 };
 
-export default ProductList;
+export default inventoryList;

@@ -1,17 +1,18 @@
 @font-face {
-  font-family: "Rubik-Regular";
-  src: url(./assets/fonts/Rubik/Rubik-Regular.ttf) format("truetype");
+  font-family: "TTInterfaces-Regular";
+  src: url(./assets/fonts/ttinterfaces/TTInterfaces-Regular.ttf)
+    format("truetype");
 }
 
 @font-face {
-  font-family: "Rubik-Bold";
-  src: url(./assets/fonts/Rubik/Rubik-Bold.ttf) format("truetype");
+  font-family: "TTInterfaces-Bold";
+  src: url(./assets/fonts/ttinterfaces/TTInterfaces-Bold.ttf) format("truetype");
 }
 
 body {
   color: #000;
   height: 100vh;
-  font-family: "Rubik-Regular";
+  font-family: "TTInterfaces-Regular";
   margin: 0;
 }
 
@@ -19,7 +20,7 @@ body {
   height: 100%;
 }
 
-.center {
+.centered {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,13 +41,6 @@ body {
 .btn:active {
   background-color: #fceebd;
   color: #f6c51b;
-}
-
-.floating-btn {
-  position: absolute;
-  bottom: 0;
-  margin: 1rem;
-  right: 0;
 }
 
 .centered {

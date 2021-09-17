@@ -1,0 +1,8 @@
+.header {
+  align-items: center;
+  display: grid;
+  font-weight: bold;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  height: 4.5rem;
+  justify-items: center;
+}

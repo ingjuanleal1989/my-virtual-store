@@ -1,0 +1,27 @@
+.inventory-item {
+  align-items: center;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  height: 4.5rem;
+  justify-items: center;
+}
+
+img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+span {
+  padding-left: 1rem;
+}
+
+.name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

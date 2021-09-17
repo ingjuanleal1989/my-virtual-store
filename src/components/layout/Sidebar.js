@@ -1,28 +1,27 @@
 import { NavLink } from "react-router-dom";
-import { FaCube } from "react-icons/fa";
-import { HiViewGridAdd } from "react-icons/hi";
+import { FaCubes } from "react-icons/fa";
+import { VscGraph } from "react-icons/vsc";
 
 import "./sidebar.css";
 
 const Sidebar = () => {
   return (
     <div className="sidebar-container">
-      <div className="profile-container center">
-        <div className="user-picture center"></div>
-        <p>Pepito Perez</p>
+      <div className="logo-container center">
+        <div className="logo center"></div>
       </div>
       <nav className="nav">
         <ul>
           <li>
-            <NavLink to="/products" activeClassName="active">
-              <FaCube className="icon" />
-              <span>Products</span>
+            <NavLink to="/inventory" activeClassName="active">
+              <FaCubes className="icon" />
+              <span>Inventory</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/new-product" activeClassName="active">
-              <HiViewGridAdd className="icon" />
-              <span>Add a Product</span>
+            <NavLink to="/reporters" activeClassName="active">
+              <VscGraph className="icon" />
+              <span>Reporters</span>
             </NavLink>
           </li>
         </ul>
