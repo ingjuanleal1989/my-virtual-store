@@ -1,7 +1,7 @@
 import { Fragment, useRef, useState } from "react";
 import { Prompt } from "react-router-dom";
 
-const InventoryItemDetails = (props) => {
+const AddEditInventoryItem = (props) => {
   const [isEntering, setIsEntering] = useState(false);
 
   const nameInputRef = useRef();
@@ -97,4 +97,4 @@ const InventoryItemDetails = (props) => {
   );
 };
 
-export default InventoryItemDetails;
+export default AddEditInventoryItem;

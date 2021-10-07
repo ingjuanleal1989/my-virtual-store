@@ -5,10 +5,13 @@ import { VscGraph } from "react-icons/vsc";
 import "./sidebar.css";
 
 const Sidebar = () => {
+  const logoImage =
+    "https://1000marcas.net/wp-content/uploads/2019/12/Tesla-logo.png";
+
   return (
     <div className="sidebar-container">
-      <div className="logo-container center">
-        <div className="logo center"></div>
+      <div className="logo-container">
+        <img className="logo" alt="logo" src={logoImage} />
       </div>
       <nav className="nav">
         <ul>

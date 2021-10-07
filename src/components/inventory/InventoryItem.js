@@ -1,25 +1,24 @@
-import { useHistory } from "react-router-dom";
-
 import "./inventoryItem.css";
 
 const InventoryItem = (props) => {
-  const history = useHistory();
-
-  const toogleItemHandler = () => {
-    history.push(`/inventory/${props.id}`);
+  const onClickHandler = () => {
+    props.onClick(props.item);
   };
 
   return (
-    <div className="inventory-item" onClick={toogleItemHandler}>
+    <div className="inventory-item" onClick={onClickHandler}>
       <div className="name-container">
-        <img src={props.image} alt={props.id} />
-        <span>{props.name}</span>
+        <img
+          className="inventory-item-image"
+          src={props.item.image}
+          alt={props.item.id}
+        />
+        <span>{props.item.name}</span>
       </div>
-
-      <span>{props.collection}</span>
-      <span>{props.quantity}</span>
-      <span>{props.manufacturingCost}</span>
-      <span>{props.price}</span>
+      <span>{props.item.collection}</span>
+      <span>{props.item.quantity}</span>
+      <span>{props.item.manufacturingCost}</span>
+      <span>{props.item.price}</span>
     </div>
   );
 };

@@ -5,17 +5,11 @@ const inventoryList = (props) => {
   return (
     <div>
       <InventoryListHeader />
-      {props.products.map((product) => (
+      {props.items.map((inventoryItem) => (
         <InventoryItem
-          key={product.id}
-          id={product.id}
-          name={product.name}
-          collection={product.collection}
-          quantity={product.quantity}
-          image={product.image}
-          manufacturingCost={product.manufacturingCost}
-          price={product.price}
-          profitability={product.profitability}
+          key={inventoryItem.id}
+          item={inventoryItem}
+          onClick={props.onShowModal}
         />
       ))}
     </div>

@@ -10,12 +10,12 @@
 .user-avatar-container {
   display: flex;
   align-items: center;
+  cursor: pointer;
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
 
 .user-avatar {
-  background-image: url("../../assets/images/user-image.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.3rem;
