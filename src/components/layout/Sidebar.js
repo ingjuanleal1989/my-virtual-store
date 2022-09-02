@@ -22,9 +22,9 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/reporters" activeClassName="active">
+            <NavLink to="/token" activeClassName="active">
               <VscGraph className="icon" />
-              <span>Reporters</span>
+              <span>Token</span>
             </NavLink>
           </li>
         </ul>

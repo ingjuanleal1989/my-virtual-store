@@ -1,11 +1,12 @@
 import PageContainer from "../components/layout/PageContainer";
 
-const ReportersPage = () => {
+const Token = () => {
   return (
     <PageContainer>
-      <div>Reporters</div>
+      <h3>Token</h3>
+      <div>Here I can check my token!</div>
     </PageContainer>
   );
 };
 
-export default ReportersPage;
+export default Token;

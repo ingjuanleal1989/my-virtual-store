@@ -6,7 +6,7 @@ import Layout from "./components/layout/Layout";
 import InventoryPage from "./pages/InventoryPage";
 import NewInventoryItemPage from "./pages/NewInventoryItemPage";
 import NotFound from "./pages/NotFound";
-import ReportersPage from "./pages/ReportersPage";
+import Token from "./pages/ReportersPage";
 import ManageAccountPage from "./pages/ManageAccountPage";
 
 const App = () => {
@@ -20,8 +20,8 @@ const App = () => {
           <Route path="/inventory" exact>
             <InventoryPage />
           </Route>
-          <Route path="/reporters">
-            <ReportersPage />
+          <Route path="/token">
+            <Token />
           </Route>
           <Route path="/inventory/new-item">
             <NewInventoryItemPage />
