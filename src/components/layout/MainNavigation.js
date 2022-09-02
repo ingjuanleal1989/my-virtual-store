@@ -17,6 +17,7 @@ const MainNavigation = (props) => {
         />
         <span>{props.userName}</span>
       </div>
+      <button>Sign out</button>
     </div>
   );
 };
