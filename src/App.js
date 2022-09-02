@@ -8,6 +8,7 @@ import NewInventoryItemPage from "./pages/NewInventoryItemPage";
 import NotFound from "./pages/NotFound";
 import Token from "./pages/ReportersPage";
 import ManageAccountPage from "./pages/ManageAccountPage";
+import Token2 from "./pages/TokenPage2";
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
           </Route>
           <Route path="/token">
             <Token />
+          </Route>
+          <Route path="/token2">
+            <Token2 />
           </Route>
           <Route path="/inventory/new-item">
             <NewInventoryItemPage />
